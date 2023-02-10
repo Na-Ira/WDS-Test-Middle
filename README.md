@@ -1,1 +1,1 @@
-##### HTML test template - Full/Web developer (middle)
+##### HTML test template - Fullstack/Web developer (middle)
