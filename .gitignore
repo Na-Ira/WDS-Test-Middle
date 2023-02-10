@@ -4,6 +4,3 @@ logs/
 
 #config
 *.config
-
-#docx
-*.docx
