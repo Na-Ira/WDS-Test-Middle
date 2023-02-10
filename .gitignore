@@ -1,0 +1,9 @@
+#workspace
+*.code-workspace
+logs/
+
+#config
+*.config
+
+#docx
+*.docx
