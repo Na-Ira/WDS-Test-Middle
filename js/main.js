@@ -1,3 +1,23 @@
+// loader page
+let wrapload = document.querySelector(".loading");
+
+//fade out effect
+const fadeOut = function (el) {
+  el.classList.add("load-hide");
+  el.classList.remove("load-show");
+};
+
+const loadder = function () {
+  setTimeout(() => {
+    fadeOut(wrapload);
+  }, 1000);
+};
+// window load
+window.addEventListener("load", () => {
+  //load animation page
+  loadder();
+});
+
 window.addEventListener("DOMContentLoaded", () => {
   // Navbar shrink function
   var navbarShrink = function () {
