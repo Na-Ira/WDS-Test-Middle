@@ -824,7 +824,7 @@ MEDIA  =================
   .about {
     & .about-img {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
     }
   }
@@ -837,6 +837,11 @@ MEDIA  =================
       &::after {
         min-height: 68.75rem;
       }
+    }
+  }
+  .about {
+    & .about-img {
+      justify-content: center;
     }
   }
 }

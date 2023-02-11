@@ -809,8 +809,8 @@ MEDIA  =================
   .about .about-img {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     -ms-flex-align: center;
         align-items: center;
   }
@@ -821,6 +821,10 @@ MEDIA  =================
   }
   .hero .hero-container::after {
     min-height: 68.75rem;
+  }
+  .about .about-img {
+    -ms-flex-pack: center;
+        justify-content: center;
   }
 }
 @media (min-width: 3000px) {
