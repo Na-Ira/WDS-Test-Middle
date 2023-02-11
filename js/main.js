@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", () => {
   // Navbar shrink function
   var navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector("#mainNav");
@@ -39,11 +39,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
    */
   const hum = document.querySelector(".ham");
   document
-    .querySelectorAll(".navbar-collapse ul li a:not(.dropdown-toggle)")
+    .querySelectorAll(".navbar-collapse .nav-link:not(.dropdown-toggle)")
     .forEach((itm) => {
       itm.addEventListener("click", () => {
         document.querySelector(".navbar-toggler").click();
         hum.classList.remove("active");
+        itm.classList.remove("active");
       });
     });
 });

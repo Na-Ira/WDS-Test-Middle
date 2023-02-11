@@ -924,6 +924,22 @@ MEDIA  =================
           background-color: transparent;
           border: none;
           border-radius: 0;
+          transition: max-height 0.3s, padding 0.3s, opacity 0.2s 0.1s,
+            visibility 0s 0.3s;
+          max-height: 0;
+          display: block;
+          padding: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          &.show {
+            transition: max-height 0.3s, padding 0.3s, opacity 0.2s,
+              visibility 0s;
+            max-height: 100%;
+            padding: 0.5rem 0;
+            opacity: 1;
+            visibility: visible;
+          }
           & .dropdown-container {
             margin-left: 1rem;
           }
@@ -935,6 +951,7 @@ MEDIA  =================
             &.show {
               color: var(--dark);
               border-bottom: 0.067rem solid rgba($color: #ffffff, $alpha: 0.3);
+              background: transparent;
             }
           }
         }
@@ -960,6 +977,9 @@ MEDIA  =================
       }
     }
     &.navbar-shrink {
+      &.bg-mob {
+        background: #f5fcf8 !important;
+      }
       & .navbar-nav {
         & .nav-item {
           & .nav-link {

@@ -874,6 +874,20 @@ MEDIA  =================
     background-color: transparent;
     border: none;
     border-radius: 0;
+    transition: max-height 0.3s, padding 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    max-height: 0;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .navbar .navbar-container .navbar-nav .dropdown-menu.show {
+    transition: max-height 0.3s, padding 0.3s, opacity 0.2s, visibility 0s;
+    max-height: 100%;
+    padding: 0.5rem 0;
+    opacity: 1;
+    visibility: visible;
   }
   .navbar .navbar-container .navbar-nav .dropdown-menu .dropdown-container {
     margin-left: 1rem;
@@ -887,6 +901,7 @@ MEDIA  =================
   .navbar .navbar-container .navbar-nav .dropdown-menu .dropdown-item.show {
     color: var(--dark);
     border-bottom: 0.067rem solid rgba(255, 255, 255, 0.3);
+    background: transparent;
   }
   .navbar .navbar-container .navbar-nav .dropdown .nav-item {
     border-bottom: none;
@@ -902,6 +917,9 @@ MEDIA  =================
   }
   .navbar .navbar-container .navbar-nav .nav-link.show {
     border-bottom: 0.067rem solid rgba(255, 255, 255, 0.3);
+  }
+  .navbar.navbar-shrink.bg-mob {
+    background: #f5fcf8 !important;
   }
   .navbar.navbar-shrink .navbar-nav .nav-item .nav-link {
     padding: 1rem 0;
